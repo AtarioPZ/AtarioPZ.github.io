@@ -1,3 +1,19 @@
+#navbar {
+	overflow: hidden;	
+	background-image: url("Images/banner.webp");
+	color: whitesmoke;
+  }
 body{
 	background-color: silver;
+}
+.content {
+	padding: 16px;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .conten{
+	padding-top: 60px;
 }
