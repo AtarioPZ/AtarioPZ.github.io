@@ -1,4 +1,3 @@
-alert("WELCOME");
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
@@ -19,7 +18,6 @@ function myFunction() {
 
 //Toggle Dark Mode
 function ToggleTheme() {
-  var element = document.body;
-  //var element = document.getElementById("dmode");
+  var element = document.body; 
   element.classList.toggle("dark-mode");
 }

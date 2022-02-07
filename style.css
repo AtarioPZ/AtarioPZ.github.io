@@ -1,7 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #CEF0D4;
+	font-family: 'Rouge Script', cursive;
+	font-weight: normal;
+	line-height: 48px;
+}
+
 #navbar {
-	overflow: hidden;
+	padding: 1px;
+	overflow: visible;
 	background-image: url("Images/ban.png");
 	color: whitesmoke;
+	border-radius: 20px;
 }
 
 body {
@@ -40,62 +53,58 @@ body {
 	padding-top: 60px;
 }
 
-.switch {
+input[type="checkbox"] {
+	margin: 10px;
 	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 34px;
+	width: 30px;
+	height: 10px;
+	-webkit-appearance: none;
+	background: linear-gradient(0deg, #333, #000);
+	outline: none;
+	border-radius: 20px;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
 }
 
-.switch input {
-	opacity: 0;
-	width: 0;
-	height: 0;
+input:checked[type="checkbox"]:nth-of-type(1) {
+	background: linear-gradient(0deg, #e67e22, #f39c12);
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
 }
 
-.slider {
+input:checked[type="checkbox"]:nth-of-type(2) {
+	background: linear-gradient(0deg, #70a1ff, #1e90ff);
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+input[type="checkbox"]:before {
+	content: '';
 	position: absolute;
-	cursor: pointer;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
+	width: 20px;
+	height: 10px;
+	background: linear-gradient(0deg, #000, #6b6b6b);
+	border-radius: 20px;
+	box-shadow: 0 0 0 1px #232323;
+	transform: scale(.98, .96);
+	transition: .5s;
 }
 
-.slider:before {
+input:checked[type="checkbox"]:before {
+	left: 10px;
+}
+
+input[type="checkbox"]:after {
+	content: '';
 	position: absolute;
-	content: "";
-	height: 26px;
-	width: 26px;
-	left: 4px;
-	bottom: 4px;
-	background-color: white;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-
-input:checked+.slider {
-	background-color: #2196F3;
-}
-
-input:focus+.slider {
-	box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
-	transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-	border-radius: 34px;
-}
-
-.slider.round:before {
+	top: calc(50% - 2px);
+	left: 70px;
+	width: 4px;
+	height: 4px;
+	background: linear-gradient(0deg, #6b6b6b, #000);
 	border-radius: 50%;
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:after {
+	left: 110px;
 }
