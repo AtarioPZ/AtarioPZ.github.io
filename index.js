@@ -1,6 +1,6 @@
 alert("WELCOME");
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -15,4 +15,11 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+//Toggle Dark Mode
+function ToggleTheme() {
+  var element = document.body;
+  //var element = document.getElementById("dmode");
+  element.classList.toggle("dark-mode");
 }
