@@ -89,7 +89,7 @@ a {
 	width: 100%;
 	padding: 10px;
 	text-align: justify;
-	/*box-shadow: 0 0 0.5px;*/
+	box-shadow: 0 0 0.5px;
 	border-radius: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -112,7 +112,7 @@ a {
             according to screen size */
 @media screen and (max-width:600px) {
 	.columnA, .columnB, .columnC {
-		width: 50%;
+		width: 100%;
 	}
 }
 
