@@ -20,7 +20,7 @@ body {
 	transition: background 0.2s linear;
 }
 
-iframe{
+iframe {
 	width: 100%;
 	height: 100vh;
 }
@@ -57,6 +57,19 @@ a {
 	padding: 15px;
 }
 
+.navigation {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.navigation ul li {
+	padding: 0px;
+	display: inline-block;
+	width: auto;
+	list-style: outside none none;
+}
+
 /*content section */
 .columnA {
 	float: left;
@@ -71,8 +84,9 @@ a {
 }
 
 .columnB {
-	float: left;
-	width: 75%;
+	position: static;
+	float: none;
+	width: 100%;
 	padding: 10px;
 	text-align: justify;
 	/*box-shadow: 0 0 0.5px;*/
